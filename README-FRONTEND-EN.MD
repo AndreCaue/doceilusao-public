@@ -1,4 +1,4 @@
-# MagicShop Frontend
+# DoceIlusão Frontend
 
 ![React](https://img.shields.io/badge/React_19-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
 ![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
@@ -7,9 +7,9 @@
 
 > A complete Single Page e-commerce Application — catalog, cart, real-time shipping costs, and payments via PIX or Credit Card.
 
-Part of the **MagicShop** ecosystem (operating as **Doce Ilusão**), this frontend covers the entire flow of a modern electronic commerce: multiple domains (store interface, admin area, user profile), performance data viewing & admin dashboard (currently with dummy/mocked data for region sales metrics prototyping), a robust shopping cart with concurrent stock reservation features, automated shipping fees fetching, and seamless payment gateway connection with EFI/Gerencianet.
+Part of the **DoceIlusão** ecosystem (operating as **Doce Ilusão**), this frontend covers the entire flow of a modern electronic commerce: multiple domains (store interface, admin area, user profile), performance data viewing & admin dashboard (currently with dummy/mocked data for region sales metrics prototyping), a robust shopping cart with concurrent stock reservation features, automated shipping fees fetching, and seamless payment gateway connection with EFI/Gerencianet.
 
-> **Related Repository:** [MagicShop Backend (API) →](../Backend)
+> **Related Repository:** [DoceIlusão Backend (API) →](../Backend)
 
 ---
 
@@ -90,7 +90,7 @@ Ensure the below is properly configured in your system before engaging:
 **1. Go fetching code**
 ```bash
 git clone <repo-url>
-cd MagicShop/Frontend
+cd DoceIlusão/Frontend
 ```
 
 **2. Hydrate module dependencies**
@@ -108,7 +108,7 @@ Clone `.env` with the rules shown right below.
 Make a base `.env` file at the exact `/Frontend` root directory:
 
 ```env
-# URL for your locally running MagicShop API endpoint.
+# URL for your locally running DoceIlusão API endpoint.
 VITE_API_URL="http://localhost:8000"
 
 # EFI API context toggle. Often "sandbox" locally.
