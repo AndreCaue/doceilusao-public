@@ -1,4 +1,4 @@
-# MagicShop Frontend
+# DoceIlusão Frontend
 
 ![React](https://img.shields.io/badge/React_19-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
 ![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
@@ -7,9 +7,9 @@
 
 > Single Page Application de e-commerce completa — catálogo, carrinho, frete em tempo real e pagamentos via PIX e Cartão de Crédito.
 
-Parte do ecossistema **MagicShop** (operando como **Doce Ilusão**), este frontend cobre todo o fluxo de um comércio eletrônico moderno: múltiplos domínios (loja, administração, perfil de usuário), visualização e dashboard administrativo (com dados provisoriamente mockados para métricas de desempenho por região), carrinho robusto com reserva de estoque, cálculo de frete automatizado e integração transparente com o gateway de pagamento EFI/Gerencianet.
+Parte do ecossistema **DoceIlusão** (operando como **Doce Ilusão**), este frontend cobre todo o fluxo de um comércio eletrônico moderno: múltiplos domínios (loja, administração, perfil de usuário), visualização e dashboard administrativo (com dados provisoriamente mockados para métricas de desempenho por região), carrinho robusto com reserva de estoque, cálculo de frete automatizado e integração transparente com o gateway de pagamento EFI/Gerencianet.
 
-> **Repositório relacionado:** [MagicShop Backend →](../Backend)
+> **Repositório relacionado:** [DoceIlusão Backend →](../Backend)
 
 ---
 
@@ -81,7 +81,7 @@ Certifique-se de ter instalado em sua máquina:
 
 - [Node.js](https://nodejs.org/) **v20 ou superior**
 - [Yarn](https://yarnpkg.com/) — gerenciador de pacotes recomendado (`npm install -g yarn`)
-- Backend do MagicShop rodando localmente (veja o [README do Backend](../Backend/README.md))
+- Backend do DoceIlusão rodando localmente (veja o [README do Backend](../Backend/README.md))
 
 ---
 
@@ -91,7 +91,7 @@ Certifique-se de ter instalado em sua máquina:
 
 ```bash
 git clone <repo-url>
-cd MagicShop/Frontend
+cd DoceIlusão/Frontend
 ```
 
 **2. Instale as dependências**
@@ -111,7 +111,7 @@ Crie um arquivo `.env` na raiz do projeto (veja a seção abaixo).
 Crie um arquivo `.env` na raiz do projeto com o seguinte conteúdo:
 
 ```env
-# URL base do backend MagicShop
+# URL base do backend DoceIlusão
 VITE_API_URL="http://localhost:8000"
 
 # Ambiente da API EFI: "sandbox" (testes) ou "producao"
