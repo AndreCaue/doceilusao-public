@@ -1,8 +1,8 @@
-# MagicShop Backend API
+# DoceIlusão Backend API
 
 > API de alta performance, pronta para produção, impulsionando uma plataforma de e-commerce híbrida — loja física + entrega segura de conteúdo digital.
 
-Desenvolvido em **FastAPI**, o MagicShop gerencia desde o catálogo de produtos e lógicas de carrinho até a entrega de vídeos restritos via URLs pré-assinadas da AWS S3. A segurança e escalabilidade são conceitos essenciais: controle de acesso via escopos (*scopes*), validações e um isolamento completo entre *buckets* na nuvem.
+Desenvolvido em **FastAPI**, o DoceIlusão gerencia desde o catálogo de produtos e lógicas de carrinho até a entrega de vídeos restritos via URLs pré-assinadas da AWS S3. A segurança e escalabilidade são conceitos essenciais: controle de acesso via escopos (*scopes*), validações e um isolamento completo entre *buckets* na nuvem.
 
 ---
 
@@ -85,7 +85,7 @@ A arquitetura cria uma separação estrita na nuvem:
 
 Necessita-se de duas divisões (`dev/prod`). Exemplo abaixo:
 
-### Public Bucket (`magicshop-public-prod`)
+### Public Bucket (`DoceIlusão-public-prod`)
 
 | Setting | Valor |
 |---|---|
@@ -93,7 +93,7 @@ Necessita-se de duas divisões (`dev/prod`). Exemplo abaixo:
 | Usage | Avatars, logos de categorias, capas e thumbs |
 | Bucket Policy | Autorizar `s3:GetObject` em `Principal: "*"` |
 
-### Private Bucket (`magicshop-private-prod`)
+### Private Bucket (`DoceIlusão-private-prod`)
 
 | Setting | Valor |
 |---|---|
@@ -116,7 +116,7 @@ ACCESS_TOKEN_EXPIRE_MINUTES=1440
 CREATE_TABLES=True
 
 # Database
-DATABASE_URL=postgresql://user:password@localhost:5432/magicshop
+DATABASE_URL=postgresql://user:password@localhost:5432/DoceIlusão
 DATABASE_URL_DEV=sqlite:///./app.db
 
 # AWS S3
@@ -125,12 +125,12 @@ AWS_SECRET_ACCESS_KEY=your_secret_key
 AWS_REGION=sa-east-1
 
 # Public Buckets (Avatars, Product Images)
-S3_BUCKET_PUBLIC_DEV=magicshop-public-dev
-S3_BUCKET_PUBLIC_PROD=magicshop-public-prod
+S3_BUCKET_PUBLIC_DEV=DoceIlusão-public-dev
+S3_BUCKET_PUBLIC_PROD=DoceIlusão-public-prod
 
 # Private Buckets (Premium Content, Videos)
-S3_BUCKET_PRIVATE_DEV=magicshop-private-dev
-S3_BUCKET_PRIVATE_PROD=magicshop-private-prod
+S3_BUCKET_PRIVATE_DEV=DoceIlusão-private-dev
+S3_BUCKET_PRIVATE_PROD=DoceIlusão-private-prod
 
 # Webhooks
 WEBHOOK_SECRET=your_webhook_secret_token
@@ -142,7 +142,7 @@ WEBHOOK_SECRET=your_webhook_secret_token
 
 ```bash
 git clone <repo-url>
-cd MagicShop/Backend
+cd DoceIlusão/Backend
 
 # Crie e inicie a env (Windows)
 python -m venv venv
